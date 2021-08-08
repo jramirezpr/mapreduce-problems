@@ -37,7 +37,7 @@ def driver(friend_tuple_list):
   list_of_friend_edges = concat(list_of_edgelists)
   #=[({friend_tuple_list[0][0],friend_tuple_list_[0][1][0]},friend_tuple_list_[0][1])...
   accum = dict()
-  dict_common_friends = reduce(intersectiondict,lists_of_friend_edges, accum)
+  dict_common_friends = reduce(intersectiondict,list_of_friend_edges, accum)
   return dict_common_friends
 #example usage
 friend_tuple_list=[("A",["B","C","D"]),
@@ -47,4 +47,4 @@ friend_tuple_list=[("A",["B","C","D"]),
                    ("E",["B","C","D"])]
   
 
-print(dict_common_friends)
+print(driver(friend_tuple_list))
